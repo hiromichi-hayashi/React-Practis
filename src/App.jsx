@@ -1,6 +1,6 @@
-import "./styles.css";
-import { useState, useCallback ,useMemo} from "react";
+import { useState, useCallback, useMemo } from "react";
 import { ChildArea } from "./ChildArea";
+import { InlienStyle } from "./component/InlineStyle";
 
 export default function App() {
   const [text, setText] = useState("");
@@ -19,7 +19,7 @@ export default function App() {
     setOpen(false);
   }, [setOpen]);
 
-/*
+  /*
   useMemo 変数のメモ化複雑な変数をメモ化することで再レンダリングを減らせる
 
   const temp = useMemo(()=>{
@@ -33,6 +33,7 @@ export default function App() {
     <div className="App">
       <input value={text} onChange={onChangeText} />
       <button onClick={onClickOpen}>表示</button>
+      <InlienStyle />
       <ChildArea open={open} onClickClose={onClickClose} />
     </div>
   );
