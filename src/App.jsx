@@ -38,7 +38,7 @@ Ruteing
 
 ・react-ruter-domを使用
 
-・Link aタグと同じ意味
+・Link to=""で遷移したいURLを指定
 ・Switch　ページ遷移するときのurlを変更できる
 ・Route　どのページに飛ぶかを指定
 
