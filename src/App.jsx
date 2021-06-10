@@ -1,6 +1,7 @@
 import { useState, useCallback, useMemo } from "react";
 import { ChildArea } from "./ChildArea";
 import { InlienStyle } from "./component/InlineStyle";
+import { CssModules } from "./component/CssModules";
 
 export default function App() {
   const [text, setText] = useState("");
@@ -34,6 +35,7 @@ export default function App() {
       <input value={text} onChange={onChangeText} />
       <button onClick={onClickOpen}>表示</button>
       <InlienStyle />
+      <CssModules />
       <ChildArea open={open} onClickClose={onClickClose} />
     </div>
   );
